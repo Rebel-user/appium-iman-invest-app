@@ -14,14 +14,20 @@ exports.config = {
     maxInstances: 10,
     sync: true,
     specs: [
-        //'./trainingScript.js'
-        './playwithmocha.js'
+        './investor.js'
+        //'./playwithmocha.js'
     ],
+    // capabilities:[{
+    //         "platformName": "Android",
+    //         "automationName": "UiAutomator2",
+    //         "udid": "d5badcbe0406",
+    //         "appPackage": "udevs.iman_pos",
+    //         "appActivity": ".MainActivity"
+    // }]
     capabilities:[{
-            "platformName": "Android",
-            "automationName": "UiAutomator2",
-            "udid": "d5badcbe0406",
-            "appPackage": "udevs.iman_pos",
-            "appActivity": ".MainActivity"
+        "platformName": "Android",
+        "automationName": "UiAutomator2",
+        "udid": "d5badcbe0406",
+        "app": "/Users/akbar/Documents/iman_investor_mobile_prod-v1.3.5-release.apk"
     }]
 }
